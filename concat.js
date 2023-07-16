@@ -1,6 +1,6 @@
 console.log("1".concat("2", "3", "4", "5"));
 
-const myConcat = (...string) => {
+String.prototype.myConcat = (...string) => {
   let result = "";
   for (let i = 0; i < string.length; i++) {
     result += string[i];
